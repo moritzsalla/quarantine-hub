@@ -75,19 +75,8 @@
         <!-- /Templates -->
       </a-assets>
 
-      <!-- <a-entity
-        id="player"
-        camera
-        networked="template:#avatar-template;attachTemplateToLocal:false;"
-        position="0 1.6 0"
-        spawn-in-circle="radius:3"
-        wasd-controls
-        look-controls
-      > -->
-
       <a-entity
         id="player"
-        camera
         networked="template:#avatar-template;attachTemplateToLocal:false;"
         position="0 1.6 0"
         spawn-in-circle="radius:3"
@@ -95,15 +84,7 @@
         <a-sphere class="head" visible="false" random-color></a-sphere>
       </a-entity>
 
-      <!-- PLANE  -->
-      <!-- <a-entity
-        position="0 0 0"
-        geometry="primitive: plane; width: 10000; height: 10000;"
-        rotation="-90 0 0"
-        material="src: #grid; repeat: 10000 10000; transparent: true; metalness:0.6; roughness: 0.4; sphericalEnvMap: #sky;"
-      >
-      </a-entity> -->
-
+      <!-- LIGHTS -->
       <a-entity
         light="color: #ccccff; intensity: 1; type: ambient;"
         visible=""
@@ -120,10 +101,10 @@
       // On mobile remove elements that are resource heavy
       var isMobile = AFRAME.utils.device.isMobile();
 
-      if (isMobile) {
-        var particles = document.getElementById('particles');
-        particles.parentNode.removeChild(particles);
-      }
+      // if (isMobile) {
+      //   var particles = document.getElementById('particles');
+      //   particles.parentNode.removeChild(particles);
+      // }
 
       // Define custom schema for syncing avatar color, set by random-color
       NAF.schemas.add({
