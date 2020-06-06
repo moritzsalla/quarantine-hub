@@ -18,7 +18,8 @@ https://quarantine-hub.now.sh/
 
 Deployed on Heroku:
 
-https://dashboard.heroku.com/apps/quarantinehub-server
+https://dashboard.heroku.com/apps/quarantinehub-server  
+ws://quarantinehub-server.herokuapp.com:8080
 
 ### Resources
 
