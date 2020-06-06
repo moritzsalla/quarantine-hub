@@ -75,7 +75,7 @@
         <!-- /Templates -->
       </a-assets>
 
-      <a-entity
+      <!-- <a-entity
         id="player"
         camera
         networked="template:#avatar-template;attachTemplateToLocal:false;"
@@ -83,7 +83,9 @@
         spawn-in-circle="radius:3"
         wasd-controls
         look-controls
-      >
+      > -->
+      <a-box position='0 0.5 0' material='opacity: 0.5;'></a-box>
+
         <a-sphere class="head" visible="false" random-color></a-sphere>
       </a-entity>
 
