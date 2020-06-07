@@ -2,6 +2,8 @@
 
 VR webrtc chat room using aframe & socketio
 
+❗ Although webrtc is [https://caniuse.com/#search=webrtc](officially supported by Safari), I've been having problems with it. Use new releases of Chrome or Firefox (if you are using Edge what are you doing on Github?)
+
 Uses [networked-aframe](https://www.npmjs.com/package/networked-aframe), a framework that adds webrtc and socketio support to aframe.
 
 ## Client
