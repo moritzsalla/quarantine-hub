@@ -6,9 +6,11 @@ VR webrtc chat room using aframe & socketio
 
 Uses [networked-aframe](https://www.npmjs.com/package/networked-aframe), a framework that adds webrtc and socketio support to aframe.
 
+![Image](./screenshot.png)
+
 ## About
 
-In times of social distancing, vast efforts are being made to maintain and digitise communications between family members, friends and coworkers. Although this is necessary for the mental health of many, it does not take into account the importance of the encounter with strangers. 
+In times of social distancing, vast efforts are being made to maintain and digitise communications between family members, friends and coworkers. Although this is necessary for the mental health of many, it does not take into account the importance of the encounter with strangers.
 
 Quarantine Hub is an online platform and multiplayer game for social interaction. Much like chat roulette, there is no task other than to interact with strangers. In Quarantine Hub, however, players are abstract avatars and don’t share any resemblance to their physical self visually. Once players approach another, microphones will be gradually turned on, enabling them to communicate through merely audio. This interaction is intimate yet anonymous, much like calling a stranger on the phone.
 
