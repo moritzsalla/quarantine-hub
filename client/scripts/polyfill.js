@@ -25,7 +25,7 @@ const checkBrowser = () => {
   var isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
 
   if (isSafari) {
-    supported();
+    notSupported();
   }
 };
 
