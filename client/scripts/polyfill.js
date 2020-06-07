@@ -10,12 +10,6 @@ const checkBrowser = () => {
     navigator.msGetUserMedia ||
     window.RTCPeerConnection;
 
-  if (isWebRTCSupported) {
-    supported();
-  } else {
-    notSupported();
-  }
-
   // check if browser is edge
   if (window.navigator.userAgent.indexOf('Edge') > -1) {
     alert('WebRTC not supported');
@@ -24,7 +18,13 @@ const checkBrowser = () => {
   // check if browser is safari
   var isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
 
-  if (isSafari) {
+  if (isWebRTCSupported) {
+    if (isSafari) {
+      notSupported();
+    } else {
+      supported();
+    }
+  } else {
     notSupported();
   }
 };
