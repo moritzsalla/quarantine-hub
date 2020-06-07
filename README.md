@@ -1,4 +1,4 @@
-# Quarantine Hub
+# Quarantine Hub 🦠😷🏠
 
 VR webrtc chat room using aframe & socketio
 
