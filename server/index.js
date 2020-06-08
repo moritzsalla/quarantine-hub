@@ -11,7 +11,20 @@ const port = process.env.PORT || 8080;
 
 // Setup and configure Express http server.
 const app = express();
-app.use(express.static('public'));
+app.use(express.static(path.resolve(__dirname, '..', 'examples')));
+
+// Serve the example and build the bundle in development.
+if (process.env.NODE_ENV === 'development') {
+  const webpackMiddleware = require('webpack-dev-middleware');
+  const webpack = require('webpack');
+  const config = require('../webpack.dev');
+
+  app.use(
+    webpackMiddleware(webpack(config), {
+      publicPath: '/dist/',
+    })
+  );
+}
 
 // Start Express http server
 const webServer = http.createServer(app);
