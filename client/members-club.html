@@ -19,6 +19,22 @@
     <!-- misc -->
     <script src="./scripts/spawn-in-circle.component.js"></script>
     <script src="https://unpkg.com/aframe-particle-system-component@1.0.9/dist/aframe-particle-system-component.min.js"></script>
+    <style>
+      #log {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        padding: 1rem;
+        color: white;
+        font-size: 1rem;
+        font-family: monospace, -apple-system, BlinkMacSystemFont, 'Segoe UI',
+          Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue',
+          sans-serif;
+        margin: 0;
+        text-indent: 0;
+        list-style-type: none;
+      }
+    </style>
   </head>
 
   <body>
@@ -29,6 +45,7 @@
       debug: true;
       adapter: webrtc;
       audio: true;
+      onConnect: onConnect;
     "
       vr-mode-ui="enabled: false"
       antialias="true"
@@ -80,6 +97,8 @@
         position="0 0 -10"
       ></a-entity>
     </a-scene>
+
+    <ul id="log"></ul>
     <script>
       // Define custom schema for syncing avatar color, set by random-color
       NAF.schemas.add({
@@ -95,8 +114,21 @@
         ],
       });
       // Called by Networked-Aframe when connected to server
+
+      const log = document.getElementById('log');
+
       function onConnect() {
-        console.log('onConnect', new Date());
+        const li = document.createElement('li');
+        li.appendChild(document.createTextNode('You are connected 🎉'));
+        log.appendChild(li);
+      }
+
+      document.body.addEventListener('clientConnected', connected);
+
+      function connected() {
+        const li = document.createElement('li');
+        li.appendChild(document.createTextNode('+ Other user connected'));
+        log.appendChild(li);
       }
     </script>
     <script>
