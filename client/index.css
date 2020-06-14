@@ -2,12 +2,12 @@
 
 ::-moz-selection {
   /* Code for Firefox */
-  color: grey;
+  color: #f6713a;
   background: none;
 }
 
 ::selection {
-  color: grey;
+  color: #f6713a;
   background: none;
 }
 
