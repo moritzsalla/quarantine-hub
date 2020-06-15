@@ -6,7 +6,7 @@
 
 Uses [networked-aframe](https://www.npmjs.com/package/networked-aframe), a framework that adds webrtc and socketio support to aframe. The model is an adapted version of [this royalty free asset](https://www.turbosquid.com/3d-models/faces-mesh-obj-free/830879).
 
-![Image](./thumbnail.png)
+![Image](./image.png)
 
 ## About
 
