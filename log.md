@@ -12,16 +12,15 @@ Quarantine Hub is an online platform and multiplayer game for social interaction
 ### Goals
 
 - Bring people together in light and humorous ways during times of social distancing
+- Create anonymity and closeness at the same time
 - Play with anonymity and intimacy at the same time
 - Create space for social interaction
 Provocate?
 
-Can I create anonymity and intimacy at the same time? → Is this uncomfortable?
-
 ### Design Values
 
 1. Bring people together
-2. Create respectful and inclusive space for everybody
+2. Create a respectful and inclusive space for everybody
 3. Force people to interact with strangers
 
 ### Level Design
@@ -30,18 +29,20 @@ No levels. Amount of users acts as levels.
 
 ### Technologies
 
-Backend
+**Backend**
 - Socketio
 - Express
 - Nodejs
 
-Frontend 
+**Frontend** 
 - Unity or AFRAME
 
 ### Metric of Success
 
 Google analytics
 Hotjar (User tracking)
+Direct feedback
+User testing
 
 ### Motivation 
 
