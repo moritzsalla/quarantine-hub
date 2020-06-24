@@ -18,7 +18,7 @@ https://quarantine-hub.now.sh/
 
 ## Server
 
-Running on Heroku (free plan hence the server needs some time to fire up after a longer period of inactivity)xw
+Running on Heroku (free plan hence the server needs some time to fire up after a longer period of inactivity
 
 ```
 SERVER URL ws://quarantinehub-server.herokuapp.com:8080
